@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260922TEC4SDA03PAGE06">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>El transistor como interruptor | Electrónica analógica</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Circuitos que sienten: luz, calor y movimiento">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260922TEC4SDA03PAGE06" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Circuitos que sienten</a>
+</li>
+<li> <a href="../html/medir-para-comprender.html" class="no-ch">Medir para comprender</a>
+</li>
+<li> <a href="../html/resistencias-que-regulan.html" class="no-ch">Resistencias que regulan</a>
+</li>
+<li> <a href="../html/del-esquema-al-simulador.html" class="no-ch">Del esquema al simulador</a>
+</li>
+<li> <a href="../html/el-condensador-guarda-energia.html" class="no-ch">El condensador guarda energía</a>
+</li>
+<li> <a href="../html/diodos-y-led-importa-el-sentido.html" class="no-ch">Diodos y LED: importa el sentido</a>
+</li>
+<li class="active"> <a href="../html/el-transistor-como-interruptor.html" class="active no-ch">El transistor como interruptor</a>
+</li>
+<li> <a href="../html/sensores-y-actuadores.html" class="no-ch">Sensores y actuadores</a>
+</li>
+<li> <a href="../html/taller-conexiones-y-comprobaciones.html" class="no-ch">Taller: conexiones y comprobaciones</a>
+</li>
+<li> <a href="../html/practica-divisor-y-led.html" class="no-ch">Práctica: divisor y LED</a>
+</li>
+<li> <a href="../html/practica-luz-nocturna-con-ldr.html" class="no-ch">Práctica: luz nocturna con LDR</a>
+</li>
+<li> <a href="../html/practica-alarma-termica.html" class="no-ch">Práctica: alarma térmica</a>
+</li>
+<li> <a href="../html/disena-tu-circuito-sensor.html" class="no-ch">Diseña tu circuito sensor</a>
+</li>
+<li> <a href="../html/explica-y-demuestra.html" class="no-ch">Explica y demuestra</a>
+</li>
+<li> <a href="../html/repasa-y-conecta.html" class="no-ch">Repasa y conecta</a>
+</li>
+<li> <a href="../html/simbolos-formulas-y-errores-frecuentes.html" class="no-ch">Símbolos, fórmulas y errores frecuentes</a>
+</li>
+</ul>
+</nav><main id="20260922TEC4SDA03PAGE06" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Electrónica analógica</p></div>
+<div class="page-header"><h1 class="page-title">El transistor como interruptor</h1></div>
+</header><div id="page-content-20260922TEC4SDA03PAGE06" class="page-content">
+<article id="20260922TEC4SDA03BLK006" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Contenido</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260922TEC4SDA03IDEV006" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260922TEC4SDA03IDEV006&quot;}">
+<style>.exe-content{--chrome:#943d48;--chrome-osc:#752933;--chrome-tinte:#f8eff0;--chrome-linea:#e4c8cc}figure{margin:1.2em 0}figcaption{font-size:.9em;color:#496260}table{width:100%;border-collapse:collapse;margin:1em 0}th,td{padding:.6em;border:1px solid #e4c8cc;vertical-align:top}th{background:#f8eff0}details{padding:.7em;border:1px solid #e4c8cc;border-radius:8px;margin:.7em 0}summary{cursor:pointer;font-weight:700}iframe{display:block;margin:1em 0}</style><div class="marco marco-actividad"><h2>Actividades a tu ritmo</h2><p><a href="../content/resources/accesibilidad/actividades-07.html" target="_blank" rel="noopener">Abrir actividades sin cronómetro y con teclado (ventana nueva)</a>. Incluyen todas las preguntas de esta página, sus soluciones y explicaciones. Puedes elegir esta vía en lugar de los juegos del final.</p></div>
+<p>En esta unidad usamos un transistor <strong>NPN</strong> para controlar una pequeña carga. Sus terminales son base, colector y emisor. La posición física cambia según el modelo: identifica los terminales en la ficha del transistor antes de insertarlo.</p>
+<figure><img src="../content/resources/transistor.svg" alt="NPN como interruptor: la corriente de base permite controlar la rama del colector. La carga lleva su propia limitación de corriente." style="width:100%;height:auto;max-width:900px"><figcaption>NPN como interruptor: la corriente de base permite controlar la rama del colector. La carga lleva su propia limitación de corriente.</figcaption></figure>
+<h2>Dos estados útiles</h2><ul><li><strong>Corte:</strong> sin corriente suficiente de base, la corriente de colector es muy pequeña y la carga permanece apagada.</li><li><strong>Saturación:</strong> con excitación de base suficiente para la carga, la tensión colector–emisor es pequeña y el transistor se aproxima a un interruptor cerrado.</li></ul>
+<p>Entre ambos estados hay una zona intermedia. Un detector sencillo puede encender gradualmente el LED cerca del umbral. No todo voltaje de base superior a un valor fijo garantiza saturación: también importan la corriente disponible y la carga.</p>
+<h2>Montaje de partida</h2><p>Alimenta con 5 V. Conecta +5 V → 330 Ω → ánodo (A) del LED; cátodo (K, barra del símbolo) → colector; emisor → 0 V. La base recibe alimentación a través de 10 kΩ y un interruptor. Añade 100 kΩ entre base y emisor para mantener apagado el transistor con el interruptor abierto. Usa un NPN apropiado para esta pequeña carga, con terminales y límites comprobados.</p>
+<div class="marco marco-actividad"><h2>Del interruptor al sensor</h2><p>Simula el montaje con el interruptor abierto y cerrado. Observa el LED y mide V<sub>CE</sub>. En el <strong>apartado 4 del informe</strong>, dibuja las dos ramas, identifica la resistencia de base y explica por qué la corriente del LED no atraviesa esa resistencia.</p></div><div class="marco marco-nota">El transistor no genera energía: la fuente alimenta la carga. La corriente de base controla el paso de corriente por otra rama.</div>
+</div>
+</div>
+</article><article id="block-1790074374749-fj2ggede2" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790074374873-4txvr3j4b" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1790074619114-shvxx0gcc&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Decide si la afirmación es verdadera o falsa y contrasta la explicación.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;La corriente que alimenta el LED procede de la fuente.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;El transistor controla el paso de corriente, no crea energía.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Todos los NPN tienen sus terminales en la misma posición física.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Hay que consultar el modelo concreto; intercambiar colector y emisor puede impedir el funcionamiento.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;La saturación depende de que exista corriente de base suficiente para la carga.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No basta con afirmar que la base supera una tensión: la corriente disponible también importa.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785313017315-5i36ev3um&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1790074374873-4txvr3j4b" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Decide si la afirmación es verdadera o falsa y contrasta la explicación.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1790074374873-4txvr3j4b" id="tofPMainContainer-idevice-1790074374873-4txvr3j4b">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1790074374873-4txvr3j4b">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1790074374873-4txvr3j4b" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1790074374873-4txvr3j4b">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1790074374873-4txvr3j4b"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1790074374873-4txvr3j4b">
+                    <button  id="tofPStartGame-idevice-1790074374873-4txvr3j4b" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1790074374873-4txvr3j4b">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1790074374873-4txvr3j4b">
+                    <button id="tofPCheckTest-idevice-1790074374873-4txvr3j4b" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1790074374873-4txvr3j4b" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1790074374873-4txvr3j4b" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-1790074374712-41t2eihky" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Relaciona</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790074374025-bee4tpav7" class="idevice_node relate" data-idevice-path="../idevices/relate/" data-idevice-type="relate">
+<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona cada elemento con su descripción.</p></div><div class="relaciona-DataGame js-hidden">{"typeGame": "Relaciona", "author": "", "randomCards": true, "instructions": "<p>Relaciona cada elemento con su descripción.</p>", "showMinimize": false, "itinerary": {"showClue": false, "clueGame": "", "percentageClue": 40, "showCodeAccess": false, "codeAccess": "", "messageCodeAccess": ""}, "cardsGame": [{"url": "", "x": 0, "y": 0, "author": "", "alt": "", "audio": "", "color": "#000000", "backcolor": "#ffffff", "eText": "Base", "urlBk": "", "xBk": 0, "yBk": 0, "authorBk": "", "altBk": "", "audioBk": "", "colorBk": "#000000", "backcolorBk": "#ffffff", "eTextBk": "Terminal%20por%20el%20que%20se%20excita%20el%20transistor"}, {"url": "", "x": 0, "y": 0, "author": "", "alt": "", "audio": "", "color": "#000000", "backcolor": "#ffffff", "eText": "Corte", "urlBk": "", "xBk": 0, "yBk": 0, "authorBk": "", "altBk": "", "audioBk": "", "colorBk": "#000000", "backcolorBk": "#ffffff", "eTextBk": "Estado%20con%20corriente%20de%20colector%20muy%20peque%C3%B1a"}, {"url": "", "x": 0, "y": 0, "author": "", "alt": "", "audio": "", "color": "#000000", "backcolor": "#ffffff", "eText": "Saturaci%C3%B3n", "urlBk": "", "xBk": 0, "yBk": 0, "authorBk": "", "altBk": "", "audioBk": "", "colorBk": "#000000", "backcolorBk": "#ffffff", "eTextBk": "Estado%20con%20tensi%C3%B3n%20colector-emisor%20peque%C3%B1a"}, {"url": "", "x": 0, "y": 0, "author": "", "alt": "", "audio": "", "color": "#000000", "backcolor": "#ffffff", "eText": "Resistencia%20del%20LED", "urlBk": "", "xBk": 0, "yBk": 0, "authorBk": "", "altBk": "", "audioBk": "", "colorBk": "#000000", "backcolorBk": "#ffffff", "eTextBk": "Limita%20la%20corriente%20de%20la%20rama%20de%20salida"}], "isScorm": 0, "textButtonScorm": "Guardar la puntuación", "repeatActivity": true, "weighted": 100, "textAfter": "", "version": 2, "percentajeCards": 100, "type": 0, "showSolution": true, "timeShowSolution": 3, "time": 3, "evaluation": false, "evaluationID": "f96bc37c-5aaf-40e4-af65-a544218a46a6", "id": "idevice-1790074617752-qrmiabpwp", "msgs": {"msgSubmit": "Enviar", "msgClue": "¡Genial! La pista es:", "msgCodeAccess": "Código de acceso", "msgPlayStart": "Pulsa aquí para jugar", "msgScore": "Puntuación", "msgErrors": "Errores", "msgHits": "Aciertos", "msgMinimize": "Minimizar", "msgMaximize": "Maximizar", "msgFullScreen": "Pantalla Completa", "msgExitFullScreen": "Salir del modo pantalla completa", "msgNoImage": "Pregunta sin imágenes", "msgEndGameScore": "Comience la partida antes de guardar la puntuación.", "msgScoreScorm": "La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.", "msgOnlySaveScore": "¡Solo puede guardar la puntuación una vez!", "msgOnlySave": "Solo puede guardar una vez", "msgInformation": "Información", "msgYouScore": "Su puntuación", "msgAuthor": "Autoría", "msgOnlySaveAuto": "Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.", "msgSaveAuto": "Su puntuación se guardará automáticamente después de cada pregunta.", "msgSeveralScore": "Puede guardar la puntuación tantas veces como quiera", "msgYouLastScore": "La última puntuación guardada es", "msgActityComply": "Ya ha realizado esta actividad.", "msgPlaySeveralTimes": "Puede realizar esta actividad cuantas veces quiera", "msgClose": "Cerrar", "msgAudio": "Audio", "msgNumQuestions": "Número de tarjetas", "msgTryAgain": "Necesitas al menos %s% de respuestas correctas para obtener la información. Inténtalo de nuevo.", "msgEndGameM": "Has completado el juego. Tu puntuación es %s.", "msgUncompletedActivity": "Actividad no completada", "msgSuccessfulActivity": "Actividad superada. Puntuación: %s", "msgUnsuccessfulActivity": "Actividad no superada. Puntuación: %s", "msgTypeGame": "Relaciona", "msgCheck": "Comprobar", "msgRestart": "Reiniciar"}}</div><div class="game-evaluation-ids js-hidden" data-id="idevice-1790074374025-bee4tpav7" data-evaluationb="false" data-evaluationid="f96bc37c-5aaf-40e4-af65-a544218a46a6"></div><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/diodos-y-led-importa-el-sentido.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/sensores-y-actuadores.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

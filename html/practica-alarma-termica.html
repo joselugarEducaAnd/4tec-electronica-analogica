@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260922TEC4SDA03PAGE11">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Práctica: alarma térmica | Electrónica analógica</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Circuitos que sienten: luz, calor y movimiento">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260922TEC4SDA03PAGE11" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Circuitos que sienten</a>
+</li>
+<li> <a href="../html/medir-para-comprender.html" class="no-ch">Medir para comprender</a>
+</li>
+<li> <a href="../html/resistencias-que-regulan.html" class="no-ch">Resistencias que regulan</a>
+</li>
+<li> <a href="../html/del-esquema-al-simulador.html" class="no-ch">Del esquema al simulador</a>
+</li>
+<li> <a href="../html/el-condensador-guarda-energia.html" class="no-ch">El condensador guarda energía</a>
+</li>
+<li> <a href="../html/diodos-y-led-importa-el-sentido.html" class="no-ch">Diodos y LED: importa el sentido</a>
+</li>
+<li> <a href="../html/el-transistor-como-interruptor.html" class="no-ch">El transistor como interruptor</a>
+</li>
+<li> <a href="../html/sensores-y-actuadores.html" class="no-ch">Sensores y actuadores</a>
+</li>
+<li> <a href="../html/taller-conexiones-y-comprobaciones.html" class="no-ch">Taller: conexiones y comprobaciones</a>
+</li>
+<li> <a href="../html/practica-divisor-y-led.html" class="no-ch">Práctica: divisor y LED</a>
+</li>
+<li> <a href="../html/practica-luz-nocturna-con-ldr.html" class="no-ch">Práctica: luz nocturna con LDR</a>
+</li>
+<li class="active"> <a href="../html/practica-alarma-termica.html" class="active no-ch">Práctica: alarma térmica</a>
+</li>
+<li> <a href="../html/disena-tu-circuito-sensor.html" class="no-ch">Diseña tu circuito sensor</a>
+</li>
+<li> <a href="../html/explica-y-demuestra.html" class="no-ch">Explica y demuestra</a>
+</li>
+<li> <a href="../html/repasa-y-conecta.html" class="no-ch">Repasa y conecta</a>
+</li>
+<li> <a href="../html/simbolos-formulas-y-errores-frecuentes.html" class="no-ch">Símbolos, fórmulas y errores frecuentes</a>
+</li>
+</ul>
+</nav><main id="20260922TEC4SDA03PAGE11" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Electrónica analógica</p></div>
+<div class="page-header"><h1 class="page-title">Práctica: alarma térmica</h1></div>
+</header><div id="page-content-20260922TEC4SDA03PAGE11" class="page-content">
+<article id="20260922TEC4SDA03BLK011" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Contenido</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260922TEC4SDA03IDEV011" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260922TEC4SDA03IDEV011&quot;}">
+<style>.exe-content{--chrome:#943d48;--chrome-osc:#752933;--chrome-tinte:#f8eff0;--chrome-linea:#e4c8cc}figure{margin:1.2em 0}figcaption{font-size:.9em;color:#496260}table{width:100%;border-collapse:collapse;margin:1em 0}th,td{padding:.6em;border:1px solid #e4c8cc;vertical-align:top}th{background:#f8eff0}details{padding:.7em;border:1px solid #e4c8cc;border-radius:8px;margin:.7em 0}summary{cursor:pointer;font-weight:700}iframe{display:block;margin:1em 0}</style><div class="marco marco-actividad"><h2>Actividades a tu ritmo</h2><p><a href="../content/resources/accesibilidad/actividades-12.html" target="_blank" rel="noopener">Abrir actividades sin cronómetro y con teclado (ventana nueva)</a>. Incluyen todas las preguntas de esta página, sus soluciones y explicaciones. Puedes elegir esta vía en lugar de los juegos del final.</p></div>
+<h2>Objetivo</h2><p>Producir un aviso al calentarse una NTC. Primero se verifica la respuesta con el LED de baja corriente; el zumbador se añade solo cuando su tensión y consumo son compatibles con la etapa de mando.</p>
+<figure><img src="../content/resources/ntc.svg" alt="Detector térmico: NTC arriba y resistencia ajustable abajo. Al calentarse la NTC, la tensión de mando tiende a aumentar." style="width:100%;height:auto;max-width:900px"><figcaption>Detector térmico: NTC arriba y resistencia ajustable abajo. Al calentarse la NTC, la tensión de mando tiende a aumentar.</figcaption></figure>
+<h2>Montaje y modelo</h2><p>En el divisor, conecta +5 V → NTC → nodo S → resistencia de 1 kΩ en serie con potenciómetro de 10 kΩ → 0 V. La base se conecta a S por 10 kΩ; el emisor va a 0 V y la rama de LED conserva la orientación ya comprobada: +5 V → 330 Ω → ánodo (A); cátodo (K) → colector. Mantén 100 kΩ entre base y emisor. Se propone una NTC de 10 kΩ a 25 °C; verifica el valor del componente disponible.</p>
+<p>En el simulador, si no hay NTC, sustituye <em>solo su función resistiva</em> por una resistencia variable: ensaya 20 kΩ, 10 kΩ y 5 kΩ. Representan resistencia alta, intermedia y baja; no les asignes temperaturas sin la curva del componente.</p>
+<h2>Comprobaciones</h2><ol><li>Comprueba con LED el cambio entre resistencia alta y baja; ajusta el potenciómetro si hace falta.</li><li>En el montaje físico, compara ambiente, calentamiento suave entre los dedos y vuelta al ambiente. No uses llama, agua ni elementos calientes.</li><li>Si el cambio térmico es pequeño, registra la medida aunque no conmute: no inventes que sonó.</li><li>Para el aviso sonoro, utiliza un zumbador <strong>activo</strong> de 5 V cuya corriente admita la etapa comprobada. Un piezo pasivo no produce un tono continuo solo por conectarlo a continua.</li></ol>
+<div class="marco marco-actividad"><h2>Evidencia y limitaciones</h2><p>En el <strong>apartado 6.3 del informe</strong>, diferencia simulación resistiva, medida térmica real y salida ensayada. Explica por qué has colocado la NTC arriba y qué faltaría para indicar una temperatura de disparo.</p></div><div class="marco marco-nota">El relé y el motor se estudian como actuadores, pero su montaje requiere comprobar corriente de bobina o arranque, transistor, alimentación y diodo de protección. No sustituyas el LED por un motor o relé manteniendo el resto del circuito sin dimensionarlo.</div>
+</div>
+</div>
+</article><article id="block-1790074374720-gmi5db19x" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790074374371-y1dqx2huj" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1790074614303-7bw8hnjc8&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Decide si la afirmación es verdadera o falsa y contrasta la explicación.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Una NTC reduce su resistencia al aumentar la temperatura.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Por eso, situada arriba del divisor, hace tender a subir la salida al calentarse.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Un sensor integrado de tres terminales puede sustituir a una NTC sin modificar el esquema.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Un sensor integrado puede entregar una tensión y tener alimentación propia; no equivale a una resistencia.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Un relé puede sustituir siempre al LED sin cambiar nada más.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;La bobina requiere corriente, tensión y protección específicas; la etapa de mando debe dimensionarse.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en las conexiones y en qué magnitud cambia.&lt;/p&gt;&quot;,&quot;solution&quot;:0}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785313017315-5i36ev3um&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1790074374371-y1dqx2huj" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Decide si la afirmación es verdadera o falsa y contrasta la explicación.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1790074374371-y1dqx2huj" id="tofPMainContainer-idevice-1790074374371-y1dqx2huj">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1790074374371-y1dqx2huj">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1790074374371-y1dqx2huj" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1790074374371-y1dqx2huj">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1790074374371-y1dqx2huj"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1790074374371-y1dqx2huj">
+                    <button  id="tofPStartGame-idevice-1790074374371-y1dqx2huj" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1790074374371-y1dqx2huj">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1790074374371-y1dqx2huj">
+                    <button id="tofPCheckTest-idevice-1790074374371-y1dqx2huj" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1790074374371-y1dqx2huj" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1790074374371-y1dqx2huj" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/practica-luz-nocturna-con-ldr.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/disena-tu-circuito-sensor.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
