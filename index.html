@@ -10,9 +10,7 @@
 <meta name="description" content="Circuitos que sienten: luz, calor y movimiento">
 <script>document.querySelector("html").classList.add("js");</script><script src="libs/jquery/jquery.min.js"> </script><script src="libs/common_i18n.js"> </script><script src="libs/common.js"> </script><script src="libs/exe_export.js"> </script><script src="libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 <script src="idevices/text/text.js"></script><link rel="stylesheet" href="idevices/text/text.css">
-<script src="idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="idevices/quick-questions/quick-questions.css">
-<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script>
-<script src="theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="theme/style.css"><link rel="stylesheet" href="theme/zzz-majuelo.css">
+<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script><script src="theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="theme/style.css"><link rel="stylesheet" href="theme/zzz-majuelo.css">
 </head>
 <body class="exe-export exe-web-site">
 <script>document.body.className+=" js"</script>
@@ -20,11 +18,17 @@
 <ul>
 <li class="active"> <a href="index.html" class="active main-node no-ch">Circuitos que sienten</a>
 </li>
-<li> <a href="html/medir-para-comprender.html" class="no-ch">Medir para comprender</a>
+<li> <a href="html/tu-primer-circuito-medir-la-tension.html" class="no-ch">Tu primer circuito: medir la tensión</a>
 </li>
-<li> <a href="html/resistencias-que-regulan.html" class="no-ch">Resistencias que regulan</a>
+<li> <a href="html/medir-la-intensidad-la-ley-de-ohm.html" class="no-ch">Medir la intensidad: la ley de Ohm</a>
 </li>
-<li> <a href="html/del-esquema-al-simulador.html" class="no-ch">Del esquema al simulador</a>
+<li> <a href="html/resistencias-en-serie-y-en-paralelo.html" class="no-ch">Resistencias en serie y en paralelo</a>
+</li>
+<li> <a href="html/el-divisor-de-tension.html" class="no-ch">El divisor de tensión</a>
+</li>
+<li> <a href="html/monta-un-divisor-tu-solo.html" class="no-ch">Monta un divisor tú solo</a>
+</li>
+<li> <a href="html/busca-el-fallo.html" class="no-ch">Busca el fallo</a>
 </li>
 <li> <a href="html/el-condensador-guarda-energia.html" class="no-ch">El condensador guarda energía</a>
 </li>
@@ -34,21 +38,19 @@
 </li>
 <li> <a href="html/sensores-y-actuadores.html" class="no-ch">Sensores y actuadores</a>
 </li>
-<li> <a href="html/taller-conexiones-y-comprobaciones.html" class="no-ch">Taller: conexiones y comprobaciones</a>
+<li> <a href="html/la-protoboard-y-el-polimetro.html" class="no-ch">La protoboard y el polímetro</a>
 </li>
 <li> <a href="html/practica-divisor-y-led.html" class="no-ch">Práctica: divisor y LED</a>
 </li>
-<li> <a href="html/practica-luz-nocturna-con-ldr.html" class="no-ch">Práctica: luz nocturna con LDR</a>
+<li> <a href="html/practica-luz-nocturna.html" class="no-ch">Práctica: luz nocturna</a>
 </li>
-<li> <a href="html/practica-alarma-termica.html" class="no-ch">Práctica: alarma térmica</a>
+<li> <a href="html/practica-detector-de-calor.html" class="no-ch">Práctica: detector de calor</a>
 </li>
-<li> <a href="html/disena-tu-circuito-sensor.html" class="no-ch">Diseña tu circuito sensor</a>
+<li> <a href="html/tu-circuito-sensor.html" class="no-ch">Tu circuito sensor</a>
 </li>
-<li> <a href="html/explica-y-demuestra.html" class="no-ch">Explica y demuestra</a>
+<li> <a href="html/entrega-y-prueba-de-simulacion.html" class="no-ch">Entrega y prueba de simulación</a>
 </li>
-<li> <a href="html/repasa-y-conecta.html" class="no-ch">Repasa y conecta</a>
-</li>
-<li> <a href="html/simbolos-formulas-y-errores-frecuentes.html" class="no-ch">Símbolos, fórmulas y errores frecuentes</a>
+<li> <a href="html/repaso-para-el-examen.html" class="no-ch">Repaso para el examen</a>
 </li>
 </ul>
 </nav><main id="20260922TEC4SDA03PAGE00" class="page"> 
@@ -63,30 +65,14 @@
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="20260922TEC4SDA03IDEV000" class="idevice_node text" data-idevice-type="text" data-idevice-component-type="json"><style>.exe-content{--chrome:#943d48;--chrome-osc:#752933;--chrome-tinte:#f8eff0;--chrome-linea:#e4c8cc}figure{margin:1.2em 0}figcaption{font-size:.9em;color:#496260}table{width:100%;border-collapse:collapse;margin:1em 0}th,td{padding:.6em;border:1px solid #e4c8cc;vertical-align:top}th{background:#f8eff0}details{padding:.7em;border:1px solid #e4c8cc;border-radius:8px;margin:.7em 0}summary{cursor:pointer;font-weight:700}iframe{display:block;margin:1em 0}</style><style>.lead{font-size:1.15em}p,li{line-height:1.65}figure img{display:block;margin:auto}summary:focus-visible{outline:3px solid #176c9a}iframe{min-height:780px}table{font-size:.95em}h2{margin-top:1.8em} .marco-formula{margin:1.4em auto}</style>
-<p class="lead">¿Cómo puede una luz encenderse cuando la tapamos, sin ordenador ni programa? La luz cambia una resistencia; esa resistencia modifica una corriente y el circuito responde.</p>
-<figure><img src="content/resources/sensores_catalogo.svg" alt="Un sensor detecta un cambio; un actuador produce luz, sonido o movimiento." style="width:100%;height:auto;max-width:900px"><figcaption>Un sensor detecta un cambio; un actuador produce luz, sonido o movimiento.</figcaption></figure>
-<h2>Tu reto: una respuesta que puedas explicar</h2><p>Construirás en equipo una luz nocturna o un detector térmico con salida LED. Primero aprenderás a reconocer las piezas, después interpretarás y simularás los circuitos y finalmente los montarás y comprobarás. El detector térmico es un prototipo educativo: su respuesta no certifica una temperatura ni protege frente a incendios.</p>
-<h2>La ruta de aprendizaje</h2><ol><li><strong>Comprender y medir:</strong> tensión, corriente, resistencia y sus conexiones.</li><li><strong>Reconocer y explicar:</strong> resistencias, condensador, diodos, transistor y sensores.</li><li><strong>Construir con ayuda:</strong> del esquema al simulador y a la protoboard.</li><li><strong>Decidir y demostrar:</strong> modificar un circuito y defender la decisión con medidas.</li></ol>
-<p>En cada capítulo encontrarás un ejemplo explicado, una práctica con ayudas y una pregunta para resolver por tu cuenta. Las soluciones razonadas se abren después de responder. Las actividades a tu ritmo están junto a los ejercicios: no tienen cronómetro y se pueden usar con teclado.</p>
-<h2>Documentos de trabajo</h2><ul><li><a href="https://docs.google.com/document/d/1HOD4vhMuw1gTtkTaxBjvXlBipHcmtOqeN2PSmQsESjQ/copy" target="_blank" rel="noopener">Crear copia: informe individual</a>.</li><li><a href="https://docs.google.com/document/d/10Ybx--xISAYRfF1BtWgCSsMT05F_m4iaan0fLI90uX8/copy" target="_blank" rel="noopener">Crear copia: comprobación del equipo</a>.</li><li><a href="https://docs.google.com/document/d/1P6SfbXw79VTMMDSavZoikFBT7742ghcd6ZPw_w4othw/copy" target="_blank" rel="noopener">Crear copia: prueba individual de simulación</a>.</li></ul><p>Completa tu copia y exporta a PDF para Moodle.</p>
-<table><thead><tr><th>Tarea en Moodle</th><th>Trabajo</th><th>Evidencia</th></tr></thead><tbody><tr><td>Prácticas en protoboard</td><td>En equipo</td><td>Demostración de los montajes y comprobacion_equipo.pdf</td></tr><tr><td>Informe de prácticas</td><td>Individual</td><td>informe_practicas.pdf: explicaciones y medidas propias, apartados 1–7.</td></tr><tr><td>Prueba de simulación</td><td>Individual, en clase</td><td>prueba_simulacion.pdf y proyecto accesible para revisión.</td></tr><tr><td>Examen · Electrónica analógica</td><td>Individual, en papel</td><td>Interpretación, cálculo y comunicación del funcionamiento.</td></tr></tbody></table>
-<p>El circuito y sus imágenes pueden ser comunes al equipo; cada persona redacta sus explicaciones. Alternad construcción, medida y comprobación. Registrad qué se simuló y qué se midió físicamente. No incluyáis nombres ni fotografías de personas en las evidencias.</p>
-<div class="marco marco-nota"><strong>Regla de taller:</strong> usa solo la fuente de baja tensión indicada. Desconecta antes de cambiar cables; revisa el circuito antes de alimentar. Los montajes de este libro nunca se conectan a la red eléctrica.</div></div>
+<div id="20260922TEC4SDA03IDEV000" class="idevice_node text" data-idevice-path="idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260922TEC4SDA03IDEV000&quot;}">
+<style>.exe-content{--chrome:#943d48;--chrome-osc:#752933;--chrome-tinte:#f8eff0;--chrome-linea:#e4c8cc}p,li{line-height:1.65}h2{margin-top:1.8em}.pasos li{margin:.6em 0}figure{margin:1.4em auto;max-width:900px}figure img{display:block;width:100%;height:auto;margin:auto}figcaption{font-size:.92em;color:#496260}.fig-estrecha{max-width:440px}.fig-media{max-width:600px}table{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95em}th,td{padding:.55em;border:1px solid #e4c8cc;vertical-align:top}th{background:#f8eff0}details{padding:.7em;border:1px solid #e4c8cc;border-radius:8px;margin:.7em 0}summary{cursor:pointer;font-weight:700}.meta{border-left:5px solid #943d48;background:#f8eff0;padding:.8em 1em;margin:1em 0}.idea{border-left:5px solid #176c9a;background:#eef6fb;padding:1em;margin:1em 0}.ahora{border-left:5px solid #2e7d32;background:#f1f8f1;padding:1em;margin:1.2em 0}.ahora>p:first-child{margin-top:0}.falla{border-left:5px solid #b26a00;background:#fff6e5;padding:1em;margin:1em 0}.formula{font-size:1.6em;font-weight:700;text-align:center;margin:.6em 0}iframe{display:block;margin:1em 0;border:1px solid #e4c8cc;border-radius:12px}@media print{details>*{display:block!important}figure{break-inside:avoid}h2,h3{break-after:avoid}}</style><div class="meta"><b>Qué vas a conseguir.</b> Construir en equipo un circuito que <b>responde solo</b> a lo que pasa a su alrededor: una luz que se enciende al oscurecer o un aviso luminoso cuando algo se calienta. Sin ordenador y sin programa: solo componentes electrónicos.</div><figure><a href="content/resources/sensores_catalogo.svg" target="_blank" rel="noopener" title="Ampliar imagen"><img src="content/resources/sensores_catalogo.svg" alt="Catálogo con LDR, NTC, LED, zumbador, motor y relé, cada uno con su símbolo y lo que hace."/></a><figcaption>Un <b>sensor</b> (LDR, NTC) nota un cambio; un <b>actuador</b> (LED, zumbador, motor) produce luz, sonido o movimiento. <a href="content/resources/sensores_catalogo.svg" target="_blank" rel="noopener">Ampliar (nueva pestaña)</a>.</figcaption></figure><h2>Cómo vamos a trabajar</h2><p>Cada página del libro es una clase. Primero aprenderás a medir y a montar circuitos en un <b>simulador</b>: un programa que funciona como un laboratorio en la pantalla, donde puedes equivocarte sin romper nada. Después pasarás al <b>taller</b>, donde montarás los mismos circuitos con piezas reales sobre una placa de pruebas.</p><table><thead><tr><th>Herramienta</th><th>Para qué la usarás</th><th>Dónde aparece</th></tr></thead><tbody><tr><td>Tinkercad Circuits</td><td>Montar circuitos y medirlos en el ordenador</td><td>Desde la primera clase</td></tr><tr><td>CircuitJS</td><td>Ver cómo cambia una tensión con el tiempo</td><td>Diodos y Sensores</td></tr><tr><td>Polímetro y protoboard</td><td>Medir y montar con piezas reales</td><td>Desde «La protoboard y el polímetro»</td></tr></tbody></table><h2>Qué entregarás</h2><table><thead><tr><th>Tarea de Moodle</th><th>Quién</th><th>Qué subes</th></tr></thead><tbody><tr><td>Informe de prácticas</td><td>Tú</td><td>Las dos prácticas de CircuitJS (cuando las hagas) y, al final, <code>informe_practicas.pdf</code></td></tr><tr><td>Prácticas en protoboard</td><td>Tu equipo</td><td><code>comprobacion_equipo.pdf</code> y la demostración de vuestro circuito</td></tr><tr><td>Prueba de simulación</td><td>Tú, en clase</td><td><code>prueba_simulacion.pdf</code></td></tr><tr><td>Examen · Electrónica analógica</td><td>Tú, en papel</td><td>Nada: es un examen escrito</td></tr></tbody></table><h2>Tus documentos de trabajo</h2><p>Cada enlace abre una pantalla de Google Docs con el botón <b>Hacer una copia</b>. Púlsalo: la copia se guarda en tu Google Drive y es tuya. Al final, en tu copia, elige <b>Archivo → Descargar → Documento PDF</b> y sube ese PDF a Moodle.</p><ul><li><a href="https://docs.google.com/document/d/1HOD4vhMuw1gTtkTaxBjvXlBipHcmtOqeN2PSmQsESjQ/copy" target="_blank" rel="noopener">Informe de prácticas</a> (individual: lo vas completando en cada clase).</li><li><a href="https://docs.google.com/document/d/10Ybx--xISAYRfF1BtWgCSsMT05F_m4iaan0fLI90uX8/copy" target="_blank" rel="noopener">Comprobación del equipo</a> (una por equipo, para las prácticas del taller).</li><li><a href="https://docs.google.com/document/d/1P6SfbXw79VTMMDSavZoikFBT7742ghcd6ZPw_w4othw/copy" target="_blank" rel="noopener">Prueba de simulación</a> (solo el día de la prueba).</li></ul><p>Podéis compartir las fotos y capturas del equipo, pero cada persona escribe sus explicaciones. No pongas nombres ni fotos de personas en las entregas.</p><h2>Las normas del taller</h2><ul><li>Usa solo la fuente de 5 V del taller. Ningún circuito de este libro se conecta a un enchufe.</li><li>Desconecta la fuente antes de cambiar un cable o una pieza.</li><li>Revisa el circuito con tu compañero antes de conectar la fuente.</li></ul>
 </div>
-</article><article id="block-1790074374635-vxwai2mbw" class="box">
-<header class="box-head no-icon">
-<h1 class="box-title">Comprueba y razona</h1>
-<button class="box-toggle box-toggle-on" title="Toggle content">
-<span>Toggle content</span>
-</button></header>
-<div class="box-content">
-<div id="idevice-1790074373994-qjrnbwpn9" class="idevice_node text" data-idevice-type="text" data-idevice-component-type="json"><div class="marco marco-actividad"><h2>Interpreta, decide y explica</h2><p>Responde antes de abrir la explicación. Sin cronómetro; usa Tab y Entrar para desplegarla.</p><p><strong>Observa el catálogo. ¿Qué pareja permite detectar oscuridad y avisar con luz? Explica el cambio de cada pieza.</strong></p><details><summary>Ver razonamiento</summary><p>LDR y LED. La resistencia de la LDR aumenta al oscurecer; el circuito transforma ese cambio en corriente por el LED. El sensor no alimenta por sí solo la salida.</p></details><p><a href="content/resources/accesibilidad/actividades-01.html" target="_blank" rel="noopener">Actividad a tu ritmo en página independiente</a></p></div></div>
 </div>
 </article>
 </div></main><div class="nav-buttons">
 <span class="nav-button nav-button-left" aria-hidden="true"><span>Anterior</span></span>
-<a href="html/medir-para-comprender.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+<a href="html/tu-primer-circuito-medir-la-tension.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
 </div>
 <footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
 </div>
